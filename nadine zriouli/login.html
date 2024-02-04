@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(WhatsApp\ Image\ 2024-02-03\ à\ 21.00.36_09b371d5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 380px;
+    height: 400px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    backdrop-filter: blur(20px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    color: #000000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+input[type="text"],input[type="password"]{
+    padding: 10px;
+    width: 75%;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    outline: none;
+    color: #000000;
+}
+input[type="text"]::placeholder,input[type="password"]::placeholder{
+    color: #000000;
+}
+.check{
+    width: 80%;
+}
+.check label{
+    color: #000000;
+}
+.login{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    padding: 10px 80px;
+    transition: .5s;
+}
+.login:hover{
+    background-color: transparent;
+    color: #000000;
+}
+.regester{
+    width: 75%;
+}
+.regester p{
+    color: #000000;
+    display: inline-block;
+}
+.regesterbtn{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.regesterbtn:hover{
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Login</h1>
+            <input placeholder="Username" type="text">
+            <input placeholder="Password" type="password">
+            <div class="check">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <a class="login" href="agence.html">Login</a>
+            <div class="regester">
+                <p>Don't have an account</p>
+                <a class="regesterbtn" href="#"> Regester</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
